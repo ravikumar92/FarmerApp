@@ -5,6 +5,7 @@ import Introduction from './components/intoduction';
 import Login from './components/login';
 import Otp from './components/otp';
 import Dashboard from './components/dashboard';
+import Sidebar from './components/sideNav';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ const App = () => {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Otp" component={Otp} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
+        <Stack.Screen name="Sidebar" component={Sidebar} />
       </Stack.Navigator>
     </NavigationContainer>
   );
