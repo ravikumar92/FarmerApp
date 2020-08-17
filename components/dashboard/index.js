@@ -48,7 +48,8 @@ const Dashboard = props => {
         data={list}
         renderItem={({item}) => (
           <View style={styles.GridViewBlockStyle}>
-            <Text style={styles.GridViewInsideTextItemStyle}> {item.key} </Text>
+            <Text style={styles.GridViewInsideTextItemStyle}
+            onPress={() => props.navigation.navigate(item.navigateTo)}> {item.key} </Text>
           </View>
         )}
         numColumns={2}
