@@ -6,6 +6,7 @@ import Login from './components/login';
 import Otp from './components/otp';
 import Dashboard from './components/dashboard';
 import Sidebar from './components/sideNav';
+import MyCrops from './components/myCrops';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ const App = () => {
         <Stack.Screen name="Otp" component={Otp} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="Sidebar" component={Sidebar} />
+        <Stack.Screen name="MyCrop" component={MyCrops} />
       </Stack.Navigator>
     </NavigationContainer>
   );
