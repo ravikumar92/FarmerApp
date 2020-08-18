@@ -7,7 +7,7 @@ const Header = (props) => {
   return (
     <View style={styles.container}>
       <View>
-        <Text>
+        <Text onPress={() => props.navigation.navigate('Sidebar')}>
           <Icon name="navicon" size={30} color="black" />;
         </Text>
       </View>

@@ -34,7 +34,7 @@ const Dashboard = props => {
 
   return (
     <View style={styles.MainContainer}>
-      <Header dashboard={true} />
+      <Header {...props} dashboard={true} />
       <View style={styles.searchContainer}>
         <Text style={{top: 14}}>
           <Icon name="search" size={20} />

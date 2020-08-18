@@ -5,7 +5,7 @@ import Header from '../Header';
 const Login = (props) => {
   return (
     <View style={styles.container}>
-      <Header />
+      <Header {...props} />
       <View>
         <Text style={styles.text}>Login/Sign up</Text>
       </View>
