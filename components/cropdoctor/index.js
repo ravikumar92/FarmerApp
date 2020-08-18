@@ -7,7 +7,7 @@ const CropDoctor = props => {
     const list = [
         {
             key: 'Vegetables',
-            navigateTo: 'Vegetable',
+            navigateTo: 'CropList',
         },
         {
             key: 'Seasonal Fruits',

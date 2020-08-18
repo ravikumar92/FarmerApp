@@ -6,8 +6,8 @@ import Login from './components/login';
 import Otp from './components/otp';
 import Dashboard from './components/dashboard';
 import CropDoctor from './components/cropdoctor'
-import Vegetable from './components/Vegetable'
-import Carrot from './components/carrot'
+ import Crops from './components/cropdoctor/crops'
+ import CropList from './components/cropdoctor/crop-list'
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -22,8 +22,8 @@ const App = () => {
         <Stack.Screen name="Otp" component={Otp} />
         <Stack.Screen name="Dashboard" component={Dashboard} />
         <Stack.Screen name="CropDoctor" component={CropDoctor} />
-        <Stack.Screen name="Vegetable" component={Vegetable} />
-        <Stack.Screen name="Carrot" component={Carrot} />
+        <Stack.Screen name="Crops" component={Crops} />
+        <Stack.Screen name="CropList" component={CropList} />
       </Stack.Navigator>
     </NavigationContainer>
   );

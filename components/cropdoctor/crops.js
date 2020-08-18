@@ -3,7 +3,7 @@ import { View, Text, TextInput, StyleSheet, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import Footer from '../footer';
 
-const Vegetables = props => {
+const Crops = props => {
     const list = [
         {
             key: 'Carrot',
@@ -115,4 +115,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Vegetables;
+export default Crops;
