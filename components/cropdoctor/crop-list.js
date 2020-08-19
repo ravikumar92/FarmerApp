@@ -68,7 +68,7 @@ const CropList = props => {
                     numColumns={2}
                 />
                 <View >
-                <Text style={styles.nextButtons}>NEXT</Text>
+                <Text onPress={() => props.navigation.navigate('SymptomsList')}style={styles.nextButtons}>NEXT</Text>
             </View>
             </ScrollView>
             

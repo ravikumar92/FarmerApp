@@ -6,9 +6,11 @@ import Login from './components/login';
 import Otp from './components/otp';
 import Dashboard from './components/dashboard';
 import CropDoctor from './components/cropdoctor'
- import Crops from './components/cropdoctor/crops'
- import CropList from './components/cropdoctor/crop-list'
- import Sidebar from './components/sideNav';
+import Crops from './components/cropdoctor/crops'
+import CropList from './components/cropdoctor/crop-list'
+import SymptomsList from './components/cropdoctor/symptoms-list';
+import Sidebar from './components/sideNav';
+
 
 const Stack = createStackNavigator();
 
@@ -26,6 +28,7 @@ const App = () => {
         <Stack.Screen name="CropDoctor" component={CropDoctor} />
         <Stack.Screen name="Crops" component={Crops} />
         <Stack.Screen name="CropList" component={CropList} />
+        <Stack.Screen name="SymptomsList" component={SymptomsList} />
         <Stack.Screen name="Sidebar" component={Sidebar} />
       </Stack.Navigator>
     </NavigationContainer>
