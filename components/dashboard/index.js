@@ -16,7 +16,7 @@ const Dashboard = props => {
     },
     {
       key: 'My Crops',
-      navigateTo: 'Crops',
+      navigateTo: 'MyCrop',
     },
     {
       key: 'Tips about Organic Farming',
@@ -49,7 +49,10 @@ const Dashboard = props => {
         renderItem={({item}) => (
           <View style={styles.GridViewBlockStyle}>
             <Text style={styles.GridViewInsideTextItemStyle}
-            onPress={() => props.navigation.navigate(item.navigateTo)}> {item.key} </Text>
+              onPress={() => props.navigation.navigate(item.navigateTo)}>
+              {' '}
+              {item.key}{' '}
+            </Text>
           </View>
         )}
         numColumns={2}

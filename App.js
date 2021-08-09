@@ -10,6 +10,7 @@ import Crops from './components/cropdoctor/crops'
 import CropList from './components/cropdoctor/crop-list'
 import SymptomsList from './components/cropdoctor/symptoms-list';
 import Sidebar from './components/sideNav';
+import MyCrops from './components/myCrops';
 
 
 const Stack = createStackNavigator();
@@ -30,6 +31,7 @@ const App = () => {
         <Stack.Screen name="CropList" component={CropList} />
         <Stack.Screen name="SymptomsList" component={SymptomsList} />
         <Stack.Screen name="Sidebar" component={Sidebar} />
+        <Stack.Screen name="MyCrop" component={MyCrops} />
       </Stack.Navigator>
     </NavigationContainer>
   );
